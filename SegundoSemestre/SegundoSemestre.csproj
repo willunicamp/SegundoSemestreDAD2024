@@ -98,6 +98,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComboBoxItem.cs" />
+    <Compile Include="frmClasse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClasse.Designer.cs">
+      <DependentUpon>frmClasse.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmGerenciarHerois.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +116,12 @@
     </Compile>
     <Compile Include="frmHerois.Designer.cs">
       <DependentUpon>frmHerois.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRaca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRaca.Designer.cs">
+      <DependentUpon>frmRaca.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTermo.cs">
       <SubType>Form</SubType>
@@ -124,6 +137,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmClasse.resx">
+      <DependentUpon>frmClasse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmGerenciarHerois.resx">
       <DependentUpon>frmGerenciarHerois.cs</DependentUpon>
     </EmbeddedResource>
@@ -132,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRaca.resx">
+      <DependentUpon>frmRaca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTermo.resx">
       <DependentUpon>frmTermo.cs</DependentUpon>

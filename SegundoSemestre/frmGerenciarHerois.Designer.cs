@@ -61,12 +61,14 @@
             this.itemRaca.Name = "itemRaca";
             this.itemRaca.Size = new System.Drawing.Size(49, 20);
             this.itemRaca.Text = "&Raças";
+            this.itemRaca.Click += new System.EventHandler(this.itemRaca_Click);
             // 
             // itemClasses
             // 
             this.itemClasses.Name = "itemClasses";
             this.itemClasses.Size = new System.Drawing.Size(57, 20);
             this.itemClasses.Text = "&Classes";
+            this.itemClasses.Click += new System.EventHandler(this.itemClasses_Click);
             // 
             // itemMissoes
             // 

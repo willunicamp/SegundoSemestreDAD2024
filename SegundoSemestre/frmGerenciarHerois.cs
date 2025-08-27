@@ -35,9 +35,42 @@ namespace SegundoSemestre
             }
 
             // Se o loop terminou e não encontrou a janela, cria uma nova.
-            frmHerois formHerois = new frmHerois();
-            formHerois.MdiParent = this; // Define que este formulário é o "pai". Essencial!
-            formHerois.Show();
+            frmHerois janela = new frmHerois();
+            janela.MdiParent = this; // Define que este formulário é o "pai". Essencial!
+            janela.Show();
+        }
+
+        private void itemRaca_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in this.MdiChildren)
+            {
+                if (form is frmRaca)
+                {
+                    form.Activate(); 
+                    return;         
+                }
+            }
+
+            frmRaca janela = new frmRaca();
+            janela.MdiParent = this; 
+            janela.Show();
+        }
+
+        private void itemClasses_Click(object sender, EventArgs e)
+        {
+
+            foreach (Form form in this.MdiChildren)
+            {
+                if (form is frmClasse)
+                {
+                    form.Activate(); 
+                    return;          
+                }
+            }
+
+            frmClasse janela = new frmClasse();
+            janela.MdiParent = this; 
+            janela.Show();
         }
     }
 }

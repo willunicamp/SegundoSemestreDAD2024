@@ -211,6 +211,7 @@
             this.Controls.Add(this.imgHeroi);
             this.Name = "frmHerois";
             this.Text = "frmHerois";
+            this.Load += new System.EventHandler(this.frmHerois_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgHeroi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numNivel)).EndInit();
             this.ResumeLayout(false);
