@@ -9,16 +9,21 @@ namespace SegundoSemestre
     // Esta classe serve como um modelo para os itens que vamos adicionar
     // aos nossos ComboBoxes. Ela guarda tanto o texto a ser exibido
     // quanto o valor (ID) que fica "escondido".
-    public class ComboBoxItem
+    public class HeroiListBoxItem 
     {
-        public string Text { get; set; }
-        public int Value { get; set; }
+        public string Nome { get; set; }
+        public int Nivel { get; set; }
+        public string Descricao { get; set; }
+        public int Id { get; set; }
+
+        public int IdRaca { get; set; }
+        public int IdClasse { get; set; }
 
         // O método ToString() é chamado pelo ComboBox para decidir
         // qual texto ele deve exibir na lista.
         public override string ToString()
         {
-            return Text;
+            return Nome + " - " + Nivel.ToString();
         }
 
 

@@ -98,7 +98,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ComboBoxItem.cs" />
+    <Compile Include="utils\RacaComboBoxItem.cs" />
+    <Compile Include="utils\HeroiListBoxItem.cs" />
+    <Compile Include="utils\ClasseComboBoxItem.cs" />
     <Compile Include="frmClasse.cs">
       <SubType>Form</SubType>
     </Compile>

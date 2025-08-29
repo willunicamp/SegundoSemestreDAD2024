@@ -45,6 +45,8 @@
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.numNivel = new System.Windows.Forms.NumericUpDown();
+            this.lblPv = new System.Windows.Forms.Label();
+            this.txtPv = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.imgHeroi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numNivel)).BeginInit();
             this.SuspendLayout();
@@ -82,6 +84,7 @@
             this.cmbRaca.Name = "cmbRaca";
             this.cmbRaca.Size = new System.Drawing.Size(117, 21);
             this.cmbRaca.TabIndex = 4;
+            this.cmbRaca.SelectedIndexChanged += new System.EventHandler(this.cmbRaca_SelectedIndexChanged);
             // 
             // cmbClasse
             // 
@@ -98,6 +101,7 @@
             this.lstHerois.Name = "lstHerois";
             this.lstHerois.Size = new System.Drawing.Size(307, 394);
             this.lstHerois.TabIndex = 6;
+            this.lstHerois.SelectedIndexChanged += new System.EventHandler(this.lstHerois_SelectedIndexChanged);
             // 
             // lblNome
             // 
@@ -189,11 +193,31 @@
             this.numNivel.Size = new System.Drawing.Size(50, 20);
             this.numNivel.TabIndex = 16;
             // 
+            // lblPv
+            // 
+            this.lblPv.AutoSize = true;
+            this.lblPv.Location = new System.Drawing.Point(498, 117);
+            this.lblPv.Name = "lblPv";
+            this.lblPv.Size = new System.Drawing.Size(30, 13);
+            this.lblPv.TabIndex = 18;
+            this.lblPv.Text = "P.V.:";
+            // 
+            // txtPv
+            // 
+            this.txtPv.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtPv.Enabled = false;
+            this.txtPv.Location = new System.Drawing.Point(539, 114);
+            this.txtPv.Name = "txtPv";
+            this.txtPv.Size = new System.Drawing.Size(64, 20);
+            this.txtPv.TabIndex = 19;
+            // 
             // frmHerois
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(921, 501);
+            this.Controls.Add(this.txtPv);
+            this.Controls.Add(this.lblPv);
             this.Controls.Add(this.numNivel);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnSalvar);
@@ -237,5 +261,7 @@
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.NumericUpDown numNivel;
+        private System.Windows.Forms.Label lblPv;
+        private System.Windows.Forms.TextBox txtPv;
     }
 }
